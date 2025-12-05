@@ -1,0 +1,33 @@
+﻿<Window x:Class="POSUDA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POSUDA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="148*"/>
+            <RowDefinition Height="69*"/>
+        </Grid.RowDefinitions>
+        <Image
+            Width="100" VerticalAlignment="Top" Source="/logo.png" Margin="10,10,0,0" Height="100" HorizontalAlignment="Left"/>
+        <PasswordBox x:Name="MainPass_PassBox" Width="191" VerticalAlignment="Top" Margin="199,217,0,0" Height="23" HorizontalAlignment="Left"/>
+        <TextBox x:Name="MainLogit_Text" Width="191" VerticalAlignment="Top" Text="Логин" TextWrapping="Wrap" Margin="199,183,0,0" Height="27" HorizontalAlignment="Left"/>
+        <TextBox
+            Margin="478,226,0,0" Width="141" VerticalAlignment="Top" TextWrapping="Wrap" x:Name="TextBox_Capcha" Height="32" HorizontalAlignment="Left"/>
+        <Label
+            Margin="466,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,0.695" HorizontalAlignment="Left" FontSize="36" FontWeight="Bold" Content="CAPCHA" FontFamily="Comic Sans MS"/>
+        <Label VerticalAlignment="Center" RenderTransformOrigin="0.579,0.695" Margin="246,0,0,0" HorizontalAlignment="Left" FontSize="36" FontWeight="Bold" Content="Вход" FontFamily="Comic Sans MS"/>
+        <TextBox
+            Margin="478,265,0,0" Width="72" VerticalAlignment="Top" TextWrapping="Wrap" x:Name="TextBox_JoinCapcha" Height="23" HorizontalAlignment="Left"/>
+        <Button
+            HorizontalAlignment="Left" Margin="559,265,0,0" VerticalAlignment="Top" x:Name="Capcha_Botton" Height="23" Content="CAPCHA" Click="Capcha_Botton_Click" Width="60" Background="#FF06C50E" FontFamily="Comic Sans MS"/>
+        <Button Width="191" VerticalAlignment="Top" x:Name="Join_Botton" Margin="199,287,0,0" Height="26" HorizontalAlignment="Left" Content="Вход" Click="Join_Botton_Click" Grid.RowSpan="2" Background="#FF06C50E" FontFamily="Comic Sans MS"/>
+        <Button
+            Width="107" VerticalAlignment="Top" Margin="199,254,0,0" Height="26" HorizontalAlignment="Left" Content="Войти как гость" Background="#FF07720C" FontFamily="Comic Sans MS"/>
+        <Button Content="Авторизация" HorizontalAlignment="Left" Margin="311,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.321,0.397" Width="79" Height="26" Click="Button_Click" Background="#FF07720C" FontFamily="Comic Sans MS"/>
+
+    </Grid>
+</Window>

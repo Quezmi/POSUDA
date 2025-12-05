@@ -1,0 +1,20 @@
+﻿<Window x:Class="POSUDA.RegForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POSUDA"
+        mc:Ignorable="d"
+        Title="RegForm" Height="360.1" Width="500">
+    <Grid Margin="0,0,0,-6">
+        <Image
+            Width="100" VerticalAlignment="Top" Source="/logo.png" Margin="10,10,0,0" Height="100" HorizontalAlignment="Left"/>
+        <Button x:Name="RegReg_Button" Content="Авторизация" HorizontalAlignment="Left" Margin="204,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.937,-1.635" Width="146" Click="Button_Click" FontFamily="Comic Sans MS" Background="#FF06C50E"/>
+        <Label Content="Авторизация" HorizontalAlignment="Left" Margin="206,81,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="RegName_TextBox" HorizontalAlignment="Left" Margin="206,157,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="144" Height="24" FontFamily="Comic Sans MS"/>
+        <PasswordBox x:Name="RegPass_TextBox" HorizontalAlignment="Left" Margin="204,215,0,0" VerticalAlignment="Top" Width="144" Height="24" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="RegLogin_textBox" HorizontalAlignment="Left" Margin="206,186,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="142" Height="24" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="RegRole_textBox" HorizontalAlignment="Left" Margin="206,128,0,0" TextWrapping="Wrap" Text="Роль" VerticalAlignment="Top" Width="144" Height="24" FontFamily="Comic Sans MS"/>
+
+    </Grid>
+</Window>
